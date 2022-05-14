@@ -13,6 +13,7 @@ from utils.constants import HANDLE_DIR
 
 app = Flask(__name__)
 
+# TODO test
 @app.route('/generate-nft', methods=['POST'])
 def gen_nft():
     # get form data
@@ -42,6 +43,7 @@ def gen_nft():
 
     return response
 
+# TODO complete
 # @app.route('/add-contact', methods=['POST'])
 # def index():
 #     json_data = request.json

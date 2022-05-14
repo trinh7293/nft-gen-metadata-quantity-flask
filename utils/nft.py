@@ -47,7 +47,6 @@ def save_metadata(
       json.dump(meta, f)
 
 # generate single image from its metadata
-# TODO complete
 def gen_single_image(
   metadata,
   img_name
