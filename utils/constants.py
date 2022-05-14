@@ -1,0 +1,5 @@
+HANDLE_DIR = 'temp'
+ASSETS_DIR = 'assets'
+OUTPUT_DIR = 'output'
+JSON_DIR = 'json'
+IMAGES_DIR = 'images'
