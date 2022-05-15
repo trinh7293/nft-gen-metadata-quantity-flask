@@ -6,4 +6,5 @@ temp
 test*
 .vscode
 venv
+.venv
 test*
