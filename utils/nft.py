@@ -57,7 +57,7 @@ def gen_single_image(
     filepaths.append(
       os.path.join(assets_path,
       attr['trait_type'],
-      attr['trait_value'] + '.png')
+      attr['value'] + '.png')
     )
   img_output_path = os.path.join(images_path, img_name)
   # Treat the first layer as the background
@@ -97,7 +97,7 @@ def gen_images(
   print("Download assets...")
   make_paths(email_path)
 
-  download_assets()
+  download_assets(email_path)
   # init handle_path
   print("Generating metadata...")
   metadata_list = gen_metadata(

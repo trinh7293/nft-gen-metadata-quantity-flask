@@ -9,7 +9,6 @@ from tasks import task_gen_images
 
 from utils.firebase_helper import storage
 from utils.constants import HANDLE_DIR
-# from utils.email_helper import send_email_text
 
 app = Flask(__name__)
 
@@ -35,11 +34,11 @@ def gen_nft():
     # gen_images(email, email_path, quantityConfig, base_name, collection_description)
     
 
-    response.headers.add('Access-Control-Allow-Origin', '*')
     print('asset files saved')
     response = jsonify({
         'result': 'done'
     })
+    response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response
 
