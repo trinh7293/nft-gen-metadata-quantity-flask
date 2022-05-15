@@ -12,6 +12,6 @@ app_environment = {
   "smtp_user_name": os.environ.get('SMTP_USER_NAME'),
   "smtp_password": os.environ.get('SMTP_PASSWORD'),
   "sender_email": os.environ.get('SENDER_EMAIL'),
-  "celery_broker": os.environ.get('CELERY_BROKER')
+  "cloudamqp_url": os.environ.get('CLOUDAMQP_URL')
 
 } 
